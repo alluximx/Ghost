@@ -109,37 +109,35 @@
     url-regex "~5.0.0"
     video-extensions "~1.1.0"
 
-"@nexes/mongo-knex@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@nexes/mongo-knex/-/mongo-knex-0.4.0.tgz#bdaef8d8cefeb9935ab7e3a1f5d0bbcfb764722e"
-  integrity sha512-RyfcK1+WJQ0SM7r0D5fMhKwjggxyrDb8hMaQ1vqfcMe/SE2J/qoSra9+fAdwN8zYRdz6Lovd6fqCaRQ5zFv5ZA==
+"@nexes/mongo-knex@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@nexes/mongo-knex/-/mongo-knex-0.5.0.tgz#58566614ca240bdf84a270117d72b46511b17743"
+  integrity sha512-6wiTbJpy7I2xsxuvwavuwDEtJfoiaxAy4PGPFEiVziQyH3SjOFbwyqnlrKPvhNHCj2YFQHcE8rnJ3JawJVtXOA==
   dependencies:
-    debug "^4.1.0"
-    lodash "^4.17.10"
+    debug "^4.3.1"
+    lodash "^4.17.21"
 
-"@nexes/mongo-utils@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@nexes/mongo-utils/-/mongo-utils-0.3.0.tgz#144c56851b3bb773839281b416964a7d2f4982c0"
-  integrity sha512-diYGCysU0f2+YCwGEjJTDJIM79rGjAdaP7+iFK+cXvnmnVdUOAF/lUCaHLtHkXOBCdan3v9jTGTBfgHPeBhJjA==
+"@nexes/mongo-utils@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@nexes/mongo-utils/-/mongo-utils-0.3.1.tgz#3a1b89ec4585478dbb41277dc1fdb2689deb3b9d"
+  integrity sha512-SpDr6i98GeGA2vajQtliAsUqvFbawmzC6wgaC9/+9P8R0/o+71WTzvyPNYHnXNDqy0dpxq2FX78DdN6FTSKjKA==
   dependencies:
-    bluebird "^3.5.3"
-    ghost-ignition "^2.9.6"
     lodash "^4.17.11"
 
-"@nexes/nql-lang@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@nexes/nql-lang/-/nql-lang-0.0.1.tgz#a13c023873f9bc11b9e4e284449c6cfbeccc8011"
-  integrity sha1-oTwCOHP5vBG55OKERJxs++zMgBE=
+"@nexes/nql-lang@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@nexes/nql-lang/-/nql-lang-0.1.0.tgz#801a616711461a9c1ee765f8338202742036b056"
+  integrity sha512-p16GyCzvfpW7DoblHdjssACSpavU0phKZKgyhbDCuD1GYru5xbJGfI7AGBaf1grAa31gpChnPKUx2xqnSesQaw==
 
-"@nexes/nql@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@nexes/nql/-/nql-0.5.0.tgz#bff22dbd4e2aa697d5c33031675cb100b013a0a4"
-  integrity sha512-skn8cfr0OJFu6HdcLRgBL19bJ2S7pATrgR/RnZR3v4T4iHfAkZ8zzLDMGib+721eFaAURnpGfPittO+RyPAhiQ==
+"@nexes/nql@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@nexes/nql/-/nql-0.7.0.tgz#87660dc2b338fdeb0a8514df158004457ae5ef55"
+  integrity sha512-eAevZfmrowJufuxV35N9Sj9xdqetsEL01RODCMBV/5ksiamw+JQWLE+kyJsfdo+OYVej5kBlhv6sYtJx5D+GIA==
   dependencies:
-    "@nexes/mongo-knex" "0.4.0"
-    "@nexes/mongo-utils" "0.3.0"
-    "@nexes/nql-lang" "0.0.1"
-    mingo "2.2.2"
+    "@nexes/mongo-knex" "0.5.0"
+    "@nexes/mongo-utils" "^0.3.1"
+    "@nexes/nql-lang" "0.1.0"
+    mingo "^2.2.2"
 
 "@sam-lord/elasticsearch-bunyan@^0.0.5":
   version "0.0.5"
@@ -2535,7 +2533,7 @@ dayjs@^1.8.29:
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.30.tgz#d3b314d3ccdc179015d915fd3c6e14422c026378"
   integrity sha512-5s5IGuP5bVvIbOWkEDcfmXsUj24fZW1NMHVVSdSFF/kW8d+alZcI9SpBKC+baEyBe+z3fUp17y75ulstv5swUw==
 
-debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
+debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -4127,24 +4125,6 @@ ghost-ignition@4.4.2:
     nconf "0.10.0"
     prettyjson "1.2.1"
     uuid "8.3.2"
-
-ghost-ignition@^2.9.6:
-  version "2.9.6"
-  resolved "https://registry.yarnpkg.com/ghost-ignition/-/ghost-ignition-2.9.6.tgz#cc8358f0a356bae490e5abeca3c3bda8383352fe"
-  integrity sha512-4C/z6PZOxp8xjqcHR+QqYBjt0T7IRdfUwHcN86gKNXMhybaWwsH7JDyfnxLfgDfQDunx7wTHmFiSo3UT//f7MQ==
-  dependencies:
-    bunyan "1.8.12"
-    bunyan-loggly "^1.3.1"
-    caller "1.0.1"
-    debug "^2.6.9"
-    find-root "1.1.0"
-    fs-extra "^3.0.1"
-    json-stringify-safe "^5.0.1"
-    lodash "^4.16.4"
-    moment "^2.15.2"
-    nconf "^0.10.0"
-    prettyjson "^1.1.3"
-    uuid "^3.0.0"
 
 ghost-storage-base@0.0.4:
   version "0.0.4"
@@ -6025,6 +6005,11 @@ lodash@4.17.20, lodash@^4.17.20, lodash@~4.17.20:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 log-symbols@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-4.0.0.tgz#69b3cc46d20f448eccdb75ea1fa733d9e821c920"
@@ -6426,10 +6411,10 @@ mimic-response@^3.1.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-3.1.0.tgz#2d1d59af9c1b129815accc2c46a022a5ce1fa3c9"
   integrity sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==
 
-mingo@2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/mingo/-/mingo-2.2.2.tgz#be69d486ae6e0ac54b979dc5f4412db21851f693"
-  integrity sha1-vmnUhq5uCsVLl53F9EEtshhR9pM=
+mingo@^2.2.2:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/mingo/-/mingo-2.5.3.tgz#bed3db76ca9b2cc29ae1f1ff83e3a8797dc47758"
+  integrity sha512-Wb98QEQ/DaT+xPQFAX08mzM/Zz2eW1UIpKH132gXglakl2SKYBCQFzeiFygS/Hgzc9j9MDDjgouB9W7BMaLyaQ==
 
 "minimatch@2 || 3", minimatch@3.0.4, minimatch@^3.0.4, minimatch@~3.0.2, minimatch@~3.0.4:
   version "3.0.4"
