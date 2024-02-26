@@ -387,14 +387,14 @@
   dependencies:
     "@tryghost/errors" "^0.2.7"
 
-"@tryghost/admin-api-schema@1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@tryghost/admin-api-schema/-/admin-api-schema-1.4.3.tgz#9b042e2ccec9ac4ef69ac901a70ae01d8834cb97"
-  integrity sha512-1PPwLIVXXH1IsZ7Mvpb0Xn01JOak4WV6stFCgNlEFwd70F5hPUTQOAA0GuH+8bjCaSWc7IA1Mga2FfMKwcTPjg==
+"@tryghost/admin-api-schema@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@tryghost/admin-api-schema/-/admin-api-schema-2.0.0.tgz#c4cda4441acc9b08bd57a0b52fa53a451916517b"
+  integrity sha512-W0Sz1wCR4tjt72yyO6whL/hNvFwc0rAiJLVaipxo2PY1sEfP8VpK+smuYR/sVEX5eNLhoI0hxEbr4rnCF/LiuA==
   dependencies:
-    "@tryghost/errors" "0.2.6"
+    "@tryghost/errors" "0.2.8"
     bluebird "^3.5.3"
-    ghost-ignition "4.2.4"
+    ghost-ignition "4.5.4"
     lodash "^4.17.11"
 
 "@tryghost/bootstrap-socket@0.2.5":
@@ -402,18 +402,24 @@
   resolved "https://registry.yarnpkg.com/@tryghost/bootstrap-socket/-/bootstrap-socket-0.2.5.tgz#9cb42e2287a57e6132b0a98b21ce36c034cffeb2"
   integrity sha512-h4+rwCwszj5ozih57P0W8NjrN9rit6VuuMfLpSUrpbVmRpWcrvmg3JXhlSyqhe/HjHmPA3wNuqLiMLmN8H/VAA==
 
+"@tryghost/bunyan-rotating-filestream@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/bunyan-rotating-filestream/-/bunyan-rotating-filestream-0.0.7.tgz#3957de91e4e9b58999f0bbe19242080543dcfc4a"
+  integrity sha512-dswM+dxG8J7WpVoSjzAdoWXqqB5Dg0C2T7Zh6eoUvl5hkA8yWWJi/fS4jNXlHF700lWQ0g8/t+leJ7SGSWd+aw==
+  dependencies:
+    long-timeout "^0.1.1"
+
 "@tryghost/constants@0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@tryghost/constants/-/constants-0.1.4.tgz#7b185227fcad0aaa33d02abc9ba629adc8190039"
   integrity sha512-lFbfNU8jNPUxLQcxXXYzVFZMclJ4fcFoMuhed63xld/DoistWIRrI/dePEYNymG9nbYhDk/4szwdwGJE8ZURIg==
 
-"@tryghost/errors@0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.6.tgz#4554c97a1666e4db323d8c664a4df5a714f77452"
-  integrity sha512-hhCAijjK24jeuHbeT0KILSX+6nDOldgxvFfnIGJMdjThuWQGkwHhGaD9hkUXe7F8QgAvTL0J8FVG/f6fs5TwrA==
+"@tryghost/elasticsearch-bunyan@0.1.1", "@tryghost/elasticsearch-bunyan@^0.1.0":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tryghost/elasticsearch-bunyan/-/elasticsearch-bunyan-0.1.1.tgz#5a36d81dd020825dd563b1357ae6c249580c46f5"
+  integrity sha512-ILhumzdwJNoRG44S0FkgzZQlkCYioTKWEiY+FFFQpTFWwZ3Jd5a6us5k8tEsd+Wf2rZOvul/ehV45j2c2l1BMw==
   dependencies:
-    ghost-ignition "4.2.4"
-    lodash "4.17.20"
+    "@elastic/elasticsearch" "^7.10.0"
 
 "@tryghost/errors@0.2.7", "@tryghost/errors@^0.2.7":
   version "0.2.7"
@@ -421,6 +427,14 @@
   integrity sha512-oonHLYJvwQoxKLjO57EWAQe4cIvqo6YtLOBt9Gz3oQFrDdxlLrqxVkt9X4v+IvOkcpW6Nw1lw9T4A0KLRcg4eA==
   dependencies:
     ghost-ignition "4.2.4"
+    lodash "4.17.20"
+
+"@tryghost/errors@0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.8.tgz#887531bd41dc6f6fdfc8a6dda8ef08acccddf08b"
+  integrity sha512-PF6vFZnRhMKxZ9FeNtYOHTn3wKMF2u+rgC4Iw33O2tHPCPtRzQTGUU8kO02sY5pjx19OjBOlYyye5n9fRHwJPA==
+  dependencies:
+    ghost-ignition "4.4.3"
     lodash "4.17.20"
 
 "@tryghost/errors@^0.2.3":
@@ -4128,6 +4142,47 @@ ghost-ignition@4.4.2:
     prettyjson "1.2.1"
     uuid "8.3.2"
 
+ghost-ignition@4.4.3:
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/ghost-ignition/-/ghost-ignition-4.4.3.tgz#c837ab11e1f3a1cfd22cc24df6b506a9afc1bc25"
+  integrity sha512-eViE/ae+AGV/YmVbTq2W5TBWVu724EUJ0pjtSwa4q6o1+fXxMIqoELJaxMX+Gc9PBK0nI3J+E0JI8GdrEiqndg==
+  dependencies:
+    "@tryghost/elasticsearch-bunyan" "^0.1.0"
+    bunyan "1.8.15"
+    bunyan-loggly "1.4.2"
+    caller "1.0.1"
+    debug "4.3.1"
+    find-root "1.1.0"
+    fs-extra "9.1.0"
+    gelf-stream "1.1.1"
+    json-stringify-safe "5.0.1"
+    lodash "4.17.20"
+    moment "2.27.0"
+    nconf "0.10.0"
+    prettyjson "1.2.1"
+    uuid "8.3.2"
+
+ghost-ignition@4.5.4:
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/ghost-ignition/-/ghost-ignition-4.5.4.tgz#09e90721b6df04af048f89f696a7af92e0ab4dfe"
+  integrity sha512-Ab9r4zFNqqWmcYoF3sFAY7IJCi5LUTz1KrwfpOEL4BVZEBF2HfzZ8Px2JVxDpmSRMmyHKmN1h/xjXfj+IT2hxA==
+  dependencies:
+    "@tryghost/bunyan-rotating-filestream" "0.0.7"
+    "@tryghost/elasticsearch-bunyan" "0.1.1"
+    bunyan "1.8.15"
+    bunyan-loggly "1.4.2"
+    caller "1.0.1"
+    debug "4.3.1"
+    find-root "1.1.0"
+    fs-extra "9.1.0"
+    gelf-stream "1.1.1"
+    json-stringify-safe "5.0.1"
+    lodash "4.17.21"
+    moment "2.27.0"
+    nconf "0.10.0"
+    prettyjson "1.2.1"
+    uuid "8.3.2"
+
 ghost-ignition@^2.9.6:
   version "2.9.6"
   resolved "https://registry.yarnpkg.com/ghost-ignition/-/ghost-ignition-2.9.6.tgz#cc8358f0a356bae490e5abeca3c3bda8383352fe"
@@ -6025,6 +6080,11 @@ lodash@4.17.20, lodash@^4.17.20, lodash@~4.17.20:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
+lodash@4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 log-symbols@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-4.0.0.tgz#69b3cc46d20f448eccdb75ea1fa733d9e821c920"
@@ -6042,7 +6102,7 @@ logd-console-output@^1.2.1:
     ee-types "^2.2.0"
     glob "^7.1.2"
 
-long-timeout@~0.1.1:
+long-timeout@^0.1.1, long-timeout@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/long-timeout/-/long-timeout-0.1.1.tgz#9721d788b47e0bcb5a24c2e2bee1a0da55dab514"
   integrity sha1-lyHXiLR+C8taJMLivuGg2lXatRQ=
